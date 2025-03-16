@@ -59,12 +59,12 @@ public static class RequirementsChecker
 
         var installRuntime = RuntimeInformation.IsOSPlatform(OSPlatform.Windows)
             && AnsiConsole.Prompt(
-                new ConfirmationPrompt($"The .NET Runtime and ASP.NET Core Runtime version {_dotnetVersion} or higher are required to run OpenBullet 2. " +
+                new ConfirmationPrompt($"The .NET Runtime and ASP.NET Core Runtime version {_dotnetVersion} are required to run OpenBullet 2. " +
                                        "Do you want to download and install them now?"));
         
         if (!installRuntime)
         {
-            Utils.ExitWithError($"The .NET Runtime and ASP.NET Core Runtime version {_dotnetVersion} or higher are required to run OpenBullet 2. " +
+            Utils.ExitWithError($"The .NET Runtime and ASP.NET Core Runtime version {_dotnetVersion} are required to run OpenBullet 2. " +
                                 $"Please install them from https://dotnet.microsoft.com/en-us/download/dotnet/{_dotnetVersion} " +
                                 "and relaunch the Updater");
         }

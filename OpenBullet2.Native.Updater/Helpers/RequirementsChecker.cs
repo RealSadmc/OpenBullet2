@@ -58,12 +58,12 @@ public static class RequirementsChecker
         }
         
         var installRuntime = AnsiConsole.Prompt(
-            new ConfirmationPrompt($"The .NET Windows Desktop Runtime version {_dotnetVersion} or higher is required to run OpenBullet 2. " +
+            new ConfirmationPrompt($"The .NET Windows Desktop Runtime version {_dotnetVersion} is required to run OpenBullet 2. " +
                                    "Do you want to download and install it now?"));
 
         if (!installRuntime)
         {
-            Utils.ExitWithError($"The .NET Windows Desktop Runtime version {_dotnetVersion} or higher is required to run OpenBullet 2. " +
+            Utils.ExitWithError($"The .NET Windows Desktop Runtime version {_dotnetVersion} is required to run OpenBullet 2. " +
                                 $"Please install it from https://dotnet.microsoft.com/en-us/download/dotnet/{_dotnetVersion} " +
                                 "and relaunch the Updater");
         }
