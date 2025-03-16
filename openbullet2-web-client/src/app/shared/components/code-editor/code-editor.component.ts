@@ -49,6 +49,7 @@ export class CodeEditorComponent implements OnInit {
   }
 
   editorLoaded() {
+    monaco.editor.remeasureFonts();
     this.loaded.emit();
 
     if (this.language === 'lolicode') {
