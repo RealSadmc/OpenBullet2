@@ -461,7 +461,7 @@ namespace RuriLib.Functions.Http
                 data.SOURCE = WebUtility.HtmlDecode(data.SOURCE);
             }
 
-            data.Logger.Log("Received Payload:", LogColors.ForestGreen);
+            data.Logger.Log("Received Body:", LogColors.ForestGreen);
             data.Logger.Log(data.SOURCE, LogColors.GreenYellow, true);
         }
     }
