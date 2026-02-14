@@ -242,7 +242,7 @@ namespace OpenBullet2.Native.ViewModels
             MultiRunJob.OnError += OnError;
             MultiRunJob.OnHit += OnHit;
 
-            botsInfoTimer = new Timer(new TimerCallback(_ => RefreshBotsInfo()), null, 200, 200);
+            botsInfoTimer = new Timer(new TimerCallback(_ => RefreshBotsInfo()), null, 1000, 1000);
             secondsTicker = new Timer(new TimerCallback(_ => PeriodicUpdate()), null, 1000, 1000);
             soundPlayer = new SoundPlayer("Sounds/hit.wav");
             #endregion
