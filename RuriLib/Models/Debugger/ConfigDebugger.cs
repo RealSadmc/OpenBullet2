@@ -296,7 +296,7 @@ namespace RuriLib.Models.Debugger
             catch (OperationCanceledException)
             {
                 data.STATUS = "ERROR";
-                Logger.Log($"Operation canceled", LogColors.Tomato);
+                Logger.Log($"Operation canceled (TimeOut)", LogColors.Tomato);
             }
             catch (Exception ex)
             {
@@ -314,7 +314,7 @@ namespace RuriLib.Models.Debugger
             {
                 sw.Stop();
 
-                Logger.Log($"BOT ENDED AFTER {sw.ElapsedMilliseconds} ms WITH STATUS: {data.STATUS}");
+                Logger.Log($"BOT ENDED AFTER {sw.ElapsedMilliseconds} ms / STATUS: {data.STATUS}");
 
                 // Save the browsers for later use
                 lastPuppeteerBrowser = data.TryGetObject<Browser>("puppeteer");
