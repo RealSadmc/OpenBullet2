@@ -8,5 +8,5 @@ public class SystemSettingsDto
     /// <summary>
     /// The maximum number of bots that can be run by a job at the same time.
     /// </summary>
-    public int BotLimit { get; set; } = 200;
+    public int BotLimit { get; set; } = 1000;
 }

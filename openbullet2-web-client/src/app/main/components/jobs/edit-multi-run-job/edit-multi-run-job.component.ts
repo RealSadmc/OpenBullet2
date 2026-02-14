@@ -104,7 +104,7 @@ export class EditMultiRunJobComponent implements DeactivatableComponent {
   options: MultiRunJobOptionsDto | null = null;
   proxyGroups: ProxyGroupDto[] | null = null;
   wordlistTypes: string[] = [];
-  botLimit = 200;
+  botLimit = 1000;
 
   startConditionMode: StartConditionMode = StartConditionMode.Absolute;
   startAfter: TimeSpan = new TimeSpan(0);

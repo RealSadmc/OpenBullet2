@@ -22,7 +22,7 @@ namespace RuriLib.Parallelization
         /// The maximum value that the degree of parallelism can have when changed through the
         /// <see cref="Parallelizer{TInput, TOutput}.ChangeDegreeOfParallelism(int)"/> method.
         /// </summary>
-        public int MaxDegreeOfParallelism { get; set; } = 200;
+        public int MaxDegreeOfParallelism { get; set; } = 1000;
 
         /// <summary>
         /// The current status of the parallelizer.

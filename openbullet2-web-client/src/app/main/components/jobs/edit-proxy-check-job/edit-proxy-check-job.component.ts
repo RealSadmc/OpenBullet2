@@ -57,7 +57,7 @@ export class EditProxyCheckJobComponent implements DeactivatableComponent {
   startConditionMode: StartConditionMode = StartConditionMode.Absolute;
   startAfter: TimeSpan = new TimeSpan(0);
   startAt: Date = moment().add(1, 'days').toDate();
-  botLimit = 200;
+  botLimit = 1000;
 
   defaultProxyGroup = {
     id: -1,
