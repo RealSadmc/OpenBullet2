@@ -18,7 +18,7 @@ namespace RuriLib.Parallelization
         #region Constructors
         /// <inheritdoc/>
         public ThreadBasedParallelizer(IEnumerable<TInput> workItems, Func<TInput, CancellationToken, Task<TOutput>> workFunction,
-            int degreeOfParallelism, long totalAmount, int skip = 0, int maxDegreeOfParallelism = 200)
+            int degreeOfParallelism, long totalAmount, int skip = 0, int maxDegreeOfParallelism = 1000)
             : base(workItems, workFunction, degreeOfParallelism, totalAmount, skip, maxDegreeOfParallelism)
         {
 

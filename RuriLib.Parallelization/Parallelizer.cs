@@ -217,7 +217,7 @@ namespace RuriLib.Parallelization
         /// <param name="skip">The amount of <paramref name="workItems"/> to skip at the beginning</param>
         /// <param name="maxDegreeOfParallelism">The maximum degree of parallelism that can be set</param>
         public Parallelizer(IEnumerable<TInput> workItems, Func<TInput, CancellationToken, Task<TOutput>> workFunction,
-            int degreeOfParallelism, long totalAmount, int skip = 0, int maxDegreeOfParallelism = 200)
+            int degreeOfParallelism, long totalAmount, int skip = 0, int maxDegreeOfParallelism = 1000)
         {
             if (degreeOfParallelism < 1)
                 throw new ArgumentException("The degree of parallelism must be greater than 1");

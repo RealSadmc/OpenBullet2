@@ -25,7 +25,7 @@ namespace RuriLib.Parallelization
         /// changed with the <see cref="Parallelizer{TInput, TOutput}.ChangeDegreeOfParallelism(int)"/> method</param>
         public static Parallelizer<TInput, TOutput> Create(ParallelizerType type,
             IEnumerable<TInput> workItems, Func<TInput, CancellationToken, Task<TOutput>> workFunction,
-                int degreeOfParallelism, long totalAmount, int skip = 0, int maxDegreeOfParallelism = 200)
+                int degreeOfParallelism, long totalAmount, int skip = 0, int maxDegreeOfParallelism = 1000)
         {
             var pType = type switch
             {
