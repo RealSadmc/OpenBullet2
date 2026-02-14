@@ -19,10 +19,10 @@ namespace RuriLib.Models.Jobs
     {
         // Options
         public int Bots { get; set; } = 1;
-        public int BotLimit { get; init; } = 200;
+        public int BotLimit { get; init; } = 1000;
         public bool CheckOnlyUntested { get; set; } = true;
-        public string Url { get; set; } = "https://google.com";
-        public string SuccessKey { get; set; } = "title>Google";
+        public string Url { get; set; } = "https://httpbin.org/";
+        public string SuccessKey { get; set; } = "title>httpbin";
         public IEnumerable<Proxy> Proxies { get; set; }
         public TimeSpan Timeout { get; set; } = TimeSpan.FromSeconds(10);
         public TimeSpan TickInterval = TimeSpan.FromSeconds(1);

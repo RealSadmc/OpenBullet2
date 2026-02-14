@@ -39,7 +39,7 @@ namespace RuriLib.Models.Jobs
     {
         // Options
         public int Bots { get; set; } = 1;
-        public int BotLimit { get; init; } = 200;
+        public int BotLimit { get; init; } = 1000;
         public int Skip { get; set; } = 0;
         public Config Config { get; set; }
         public DataPool DataPool { get; set; }
