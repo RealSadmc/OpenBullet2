@@ -1,3 +1,7 @@
+
+Update: Bots Are 1000 Instead of the limited int of 200
+
+
 ![Logo](https://i.imgur.com/sToEkJC.png)
 
 OpenBullet 2 is a cross-platform automation suite powered by .NET. It allows to perform requests towards a target webapp and offers a lot of tools to work with the results. This software can be used for **scraping** and **parsing data**, automated **penetration testing** and much more.
